@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Sidebar</title>
+  </head>
+  <body>
+    <div class="nav">
+      <ul>
+        <li>
+          <a href="#">
+            <span class="icon"><i class="fa-solid fa-house"></i></span>
+            <span class="title">home</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="icon"><i class="fa-solid fa-message"></i></span>
+            <span class="title">message</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="icon"><i class="fa-solid fa-cogs"></i></span>
+            <span class="title">setting</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="icon"><i class="fa-solid fa-users"></i></span>
+            <span class="title">users</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="icon"><i class="fa-solid fa-sign-out"></i></span>
+            <span class="title">log out</span>
+          </a>
+        </li>
+      </ul>
+      <div class="toggle"></div>
+    </div>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script>
+      let nav = document.querySelector(".nav");
+      let toogle = document.querySelector(".toggle");
+      toogle.onclick = function () {
+        nav.classList.toggle("active");
+      };
+    </script>
+  </body>
+</html>
